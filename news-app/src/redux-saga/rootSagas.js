@@ -5,9 +5,11 @@ import { all, spawn } from 'redux-saga/effects';
 import watchFetchNews from './NewsFetch/NewsFetchWatcherSaga';
 
 function *rootSagas() {
+  console.log('Started root saga');
   yield all([
     spawn(watchFetchNews)
     ]);
+  console.log('Ended root saga');
 };
 
 // Exports

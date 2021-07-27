@@ -13,8 +13,12 @@ const SiteDescription = props => {
     <Grid item container className={classes.siteDescriptionContainer}>
       <div className={classes.attributionLinkContainer}>
         Powered by
-        <a className={classes.attributionLink} href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">
+        {/* Changed for testing mediaStack API */}
+        {/* <a className={classes.attributionLink} href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">
           &nbsp;NewsAPI.org&nbsp;
+        </a> */}
+        <a className={classes.attributionLink} href="https://gnews.io/" target="_blank" rel="noopener noreferrer">
+          &nbsp;GNews&nbsp;
         </a>
       </div>
       <div className={classes.devNameContainer}>

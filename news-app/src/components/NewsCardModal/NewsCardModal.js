@@ -59,7 +59,7 @@ const NewsCardModal = props => {
         </div>
       </div>
       <DialogContent>
-      <DialogContentText>
+      <DialogContentText>\
           <Typography 
             classes={{
               root: classes.root

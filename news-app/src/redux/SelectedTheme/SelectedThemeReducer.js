@@ -6,6 +6,7 @@ const initialState = {
 };
 
 const SelectedThemeReducer = (state = initialState, action) => {
+  console.log('Started Selected Theme Reducer');
   switch(action.type) {
     case actionTypes.CHANGE_THEME: {
       return Object.assign({}, state, {name: action.name});
@@ -15,6 +16,7 @@ const SelectedThemeReducer = (state = initialState, action) => {
       return state;
     }
   }
+  console.log('Ended Selected Theme Reducer');
 };
 
 // Exports

@@ -11,6 +11,7 @@ const initialState = {
 };
 
 const NewsResultReducer = (state = initialState, action) => {
+  console.log('Started News Result Reducer');
   switch(action.type) {
     case actionTypes.ADD_NEWS: {
       return Object.assign({}, state, {totalResultsCount: action.totalResultsCount, articles: action.articles});
@@ -35,6 +36,7 @@ const NewsResultReducer = (state = initialState, action) => {
       return state;
     }
   }
+  console.log('Ended News Result Reducer');
 };
 
 // Exports
